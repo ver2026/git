@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamEdge CDN - Content Delivery Network</title>
+  <meta name="description" content="High-performance content delivery network for video streaming and media distribution">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      min-height: 100vh;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    header { padding: 40px 0; text-align: center; }
+    h1 { font-size: 3em; margin-bottom: 10px; font-weight: 700; }
+    .tagline { font-size: 1.3em; opacity: 0.9; margin-bottom: 40px; }
+    .features { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+      gap: 30px; 
+      margin: 60px 0; 
+    }
+    .feature {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .feature h3 { font-size: 1.5em; margin-bottom: 15px; }
+    .feature p { opacity: 0.9; line-height: 1.6; }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 60px 0;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .stat {
+      text-align: center;
+      background: rgba(255,255,255,0.15);
+      padding: 30px 40px;
+      border-radius: 15px;
+      min-width: 200px;
+    }
+    .stat-number { font-size: 3em; font-weight: 700; display: block; }
+    .stat-label { opacity: 0.9; margin-top: 10px; }
+    .cta {
+      text-align: center;
+      margin: 60px 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #667eea;
+      padding: 15px 40px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: transform 0.2s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      opacity: 0.7;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 60px;
+    }
+    .tech-stack {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+      flex-wrap: wrap;
+    }
+    .tech-item {
+      background: rgba(255,255,255,0.1);
+      padding: 10px 25px;
+      border-radius: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🚀 StreamEdge CDN</h1>
+      <p class="tagline">Lightning-fast content delivery for the modern web</p>
+    </header>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-number">99.9%</span>
+        <div class="stat-label">Uptime SLA</div>
+      </div>
+      <div class="stat">
+        <span class="stat-number">&lt;50ms</span>
+        <div class="stat-label">Global Latency</div>
+      </div>
+      <div class="stat">
+        <span class="stat-number">150+</span>
+        <div class="stat-label">Edge Locations</div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>📹 Video Streaming</h3>
+        <p>Adaptive bitrate streaming with HLS and DASH support. Optimized for live and on-demand content delivery.</p>
+      </div>
+      <div class="feature">
+        <h3>⚡ Edge Caching</h3>
+        <p>Intelligent caching at the edge reduces origin load and delivers content from the nearest location to your users.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Secure Delivery</h3>
+        <p>End-to-end encryption, DRM support, and token-based authentication for protected content distribution.</p>
+      </div>
+      <div class="feature">
+        <h3>📊 Real-time Analytics</h3>
+        <p>Monitor bandwidth usage, viewer metrics, and performance data with our comprehensive analytics dashboard.</p>
+      </div>
+      <div class="feature">
+        <h3>🌍 Global Network</h3>
+        <p>Distributed infrastructure across 6 continents ensures low-latency access for users worldwide.</p>
+      </div>
+      <div class="feature">
+        <h3>🔧 API Integration</h3>
+        <p>RESTful API for seamless integration with your existing workflows and content management systems.</p>
+      </div>
+    </div>
+
+    <div class="tech-stack">
+      <div class="tech-item">HTTP/3 & QUIC</div>
+      <div class="tech-item">WebRTC</div>
+      <div class="tech-item">HLS/DASH</div>
+      <div class="tech-item">AV1 Codec</div>
+      <div class="tech-item">Edge Computing</div>
+    </div>
+
+    <div class="cta">
+      <a href="#" class="btn">Get Started with API Access</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 StreamEdge CDN. Enterprise-grade content delivery infrastructure.</p>
+      <p style="margin-top: 10px; font-size: 0.9em;">API Documentation | Status Page | Support</p>
+    </footer>
+  </div>
+
+  <script>
+    // Simulate some activity
+    const stats = document.querySelectorAll('.stat-number');
+    stats.forEach(stat => {
+      stat.style.opacity = '0';
+      setTimeout(() => {
+        stat.style.transition = 'opacity 1s';
+        stat.style.opacity = '1';
+      }, 300);
+    });
+  </script>
+</body>
+</html>

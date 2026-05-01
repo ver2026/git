@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "serverless-proxy-bridge",
+  "functions": {
+    "api/bridge.js": {
+      "memory": 128,
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/bridge" },
+    { "source": "/", "destination": "/index.html" }
+  ],
+  "trailingSlash": false
+}
